@@ -46,3 +46,10 @@ function [idx_row, idx_col] = dtmfIndices(N)
     idx_row = k_row    + 1;         % k = [175 194 214 236]
     idx_col = k_column + 1;      % k = [303 335 370]
 end
+
+% Find row & column frequencies by max energy in signal
+function [E_row, E_col] = dtmfEnergy(x, N, idx_row, idx_col)
+    X = fft(x, N);
+    E_row = abs(X(idx_row)).^2;
+    E_col = abs(X(idx_col)).^2;
+end
