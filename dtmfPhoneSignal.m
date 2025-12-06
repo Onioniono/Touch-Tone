@@ -1,7 +1,9 @@
-% Create a phone number signal
 function phone = dtmfPhoneSignal(number)
+    % Create a phone number signal
+
     % Tones is from function dtmfDigits()
     % Number is an array with length of digits
+    
     n = 0:999;
     tones = dtmfDigits(n);
     

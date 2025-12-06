@@ -1,5 +1,6 @@
-% Approximate indeces for known frequencies
-function [idx_row, idx_col] = dtmfIndices(N)
+function [idx_row, idx_col] = dtmfIndeces(N)
+    % Approximate indeces for known frequencies
+
     % N is length of samples for fft
     % Tested N was 2048
 

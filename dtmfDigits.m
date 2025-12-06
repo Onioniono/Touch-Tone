@@ -1,12 +1,13 @@
-% Matrix = ['1','2','3'; ...
-%           '4','5','6'; ...
-%           '7','8','9'; ...
-%           '?','0','?'];
-
-% Digits 0 - 9 as signals of two sinusoids
 function digits = dtmfDigits(n)
+    % Digits 0 - 9 as signals of two sinusoids
+
     % n is the length of samples
     % Tested Fs (Sampled Frequency) was 8192
+    
+    % Matrix = ['1','2','3'; ...
+    %           '4','5','6'; ...
+    %           '7','8','9'; ...
+    %           '?','0','?'];
 
     d0 = sin(0.7217*n) + sin(1.0247*n);
     d1 = sin(0.5346*n) + sin(0.9273*n);
