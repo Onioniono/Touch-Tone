@@ -1,5 +1,6 @@
 function dtmfDemo()
     % dtmfDemo: Small demo for generating & analyzing a DTMF phone signal
+    % Includes dtmfDigits.m, dtmfPhoneSignal, dtmfIndeces.m, & dtmfEnergy.m
     Fs = 8192;          % sample rate
     N  = 2048;          % FFT length
     n  = 0:999;         % sample indices for each digit
